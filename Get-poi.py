@@ -21,7 +21,7 @@ def parse():
 
 # 坐标转换
 def transform(location):
-    parameters = {'coordsys': 'gps', 'locations': location, 'key': 'd672d1cd80b1be0af193168bd7c8cbbc'}
+    parameters = {'coordsys': 'gps', 'locations': location, 'key': 'd672d1**************************'}
     base = 'http://restapi.amap.com/v3/assistant/coordinate/convert'
     response = requests.get(base, parameters)
     answer = response.json()
@@ -32,7 +32,7 @@ def transform(location):
 def around(location, distance):
     keywords = '购物服务|餐饮服务|商务住宅|生活服务|科教文化服务|住宿服务|体育休闲服务|风景名胜|交通设施服务|公司企业|' \
                '医疗保健服务|政府机构及社会团体'
-    parameters = {'location': location, 'keywords': keywords,'key': 'd672d1cd80b1be0af193168bd7c8cbbc', 'radius': distance}
+    parameters = {'location': location, 'keywords': keywords,'key': 'd672d**************************'}', 'radius': distance}
     base = 'http://restapi.amap.com/v3/place/around'
     response = requests.get(base, parameters)
     answer = response.json()
